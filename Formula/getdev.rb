@@ -1,25 +1,25 @@
 class Getdev < Formula
   desc "verify, secure, and ship AI-generated code — one binary, runs locally, nothing leaves your machine"
   homepage "https://getdev.ai"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/getdev-ai/cli/releases/download/v0.1.2/getdev-aarch64-apple-darwin.tar.xz"
-      sha256 "c7fab5d8eace3c73bc2b05f122ef392534ebaba716018543520f67cfb43efa0d"
+      url "https://github.com/getdev-ai/cli/releases/download/v0.1.3/getdev-aarch64-apple-darwin.tar.xz"
+      sha256 "0972a80b179a1345f7d7d28a4567497a31bfe41b77be66cf57c6edf369009dd4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/getdev-ai/cli/releases/download/v0.1.2/getdev-x86_64-apple-darwin.tar.xz"
-      sha256 "d01fdcdd92ca4c6d4b3e57c497f835c16eeddc811e790b2f02df24e80a372def"
+      url "https://github.com/getdev-ai/cli/releases/download/v0.1.3/getdev-x86_64-apple-darwin.tar.xz"
+      sha256 "06c1ee4e9c983f0f63c238132f11308a22d4564a694673a9c3de861807ec252f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/getdev-ai/cli/releases/download/v0.1.2/getdev-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ec3292ab711b6aebcbffd8ddcc4675b279f7e1aa6556a991cc5b544163ef9727"
+      url "https://github.com/getdev-ai/cli/releases/download/v0.1.3/getdev-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "10491c01e77d908640f68ffdec0c13c0c3fe8276d93dafae29d2fca66da30d44"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/getdev-ai/cli/releases/download/v0.1.2/getdev-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "993b5e7defec5cad7e4ab94204f99e96629619db945acbc335139bb42c9a87f5"
+      url "https://github.com/getdev-ai/cli/releases/download/v0.1.3/getdev-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "989904f53e4fef8b2c503173915a2ddef82874cacb2f64347117c7a8733a633d"
     end
   end
   license "Apache-2.0"
